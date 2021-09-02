@@ -17,6 +17,10 @@
 	text-align: center;
 	margin-bottom: -56px;
 	@include tipo-1(36);
+	@include d(t) {
+		top: -150px;
+		margin-bottom: -56px;
+	}
 }
 
 .produto_item h2:after, .produto_item h2:before{
@@ -31,6 +35,9 @@
 .produto_icone {
 	background: $text-color-1;
 	padding: 70px 0;
+	@include d(t) {
+		padding: 41px 0;
+	}
 }
 
 .produto_icone img{
@@ -46,6 +53,11 @@
 	height: 180px;
 	padding: 30px 40px;
 	@include tipo-1(18);
+	@include d(t) {
+		height: 122px;
+		padding: 20px 30px;
+		@include tipo-1(14);
+	}
 }
 
 
@@ -60,6 +72,10 @@
 	padding-top: 16px;
 	@include tipo-1(18);
 	line-height: 20px;
+	@include d(t) {
+		width: 181px;
+		height: 49px;
+	}
 }
 
 .produto_info ul li:nth-child(1), .produto_info ul li:nth-child(2) {
