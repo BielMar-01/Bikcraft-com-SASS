@@ -21,6 +21,10 @@
 		top: -150px;
 		margin-bottom: -56px;
 	}
+	@include d(m) {
+		top: -100px;
+		margin-bottom: -68px;
+	}
 }
 
 .produto_item h2:after, .produto_item h2:before{
@@ -36,6 +40,9 @@
 	background: $text-color-1;
 	padding: 70px 0;
 	@include d(t) {
+		padding: 41px 0;
+	}
+	@include d(m) {
 		padding: 41px 0;
 	}
 }
@@ -58,6 +65,11 @@
 		padding: 20px 30px;
 		@include tipo-1(14);
 	}
+	@include d(m) {
+		height: auto;
+		padding: 20px 30px;
+		@include tipo-1(14);
+	}
 }
 
 
@@ -75,6 +87,12 @@
 	@include d(t) {
 		width: 181px;
 		height: 49px;
+	}
+	@include d(m) {
+		width: 149px;
+		height: 49px;
+		padding-top: 14px;
+		@include tipo-1(14);
 	}
 }
 
@@ -105,6 +123,9 @@
 
 .form {
 	padding-right: 60px;
+	@include d(m) {
+		padding-right: 0px;
+	}
 }
 
 .form label{
@@ -167,6 +188,9 @@
 
 .orcamento_dados ul {
 	padding-right: 60px;
+	@include d(m) {
+		padding-right: 0px;
+	}
 }
 
 .orcamento_dados ul li {
